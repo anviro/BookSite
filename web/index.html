@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book portal</title> 
+            <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="resources/main/css/index.css"/>
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="resources/main/css/slider.css" >
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+        <script src="resources/main/js/createContent.js"></script>
+        <script src="resources/main/js/slider.js"></script>
+    </head>
+    <body>
+        <header>
+            <logo>
+                <img id="logoSymbol" alt="logotip" src="resources/main/images/logo.png" width="50"/>
+                <p class="logoName">Книжная лавка</p>
+                <p class="logoSlogan">Место под слоган и другое</p>
+            </logo>
+        
+        <div id="authorization">
+            <span class="login">Войти</span>
+            <span class="registration">Регистрация</span>
+            
+        </div>  
+        </header>
+        <nav>                 
+                <ul class="nav">            
+                 <li><a href="main">Главная</a></li> 
+                 <li><a href="top" class="mark">ТОП</a>
+                    
+                    <ul class="sub-nav">
+                        <li><a href="#">Podpunkt1</a></li> 
+                        <li><a href="#">Podpunkt2</a></li> 
+                        <li><a href="#">Podpunkt3</a></li> 
+                    </ul>
+                 </li>
+                 <li><a href="new">Новинки</a></li> 
+                 <li><a href="news">Новости</a></li>
+                 <li><a href="#" style="border-bottom:none;">Форум</a></li>
+                </ul>    
+                    <form id="searchForm"  class="right">
+                     <input type="search" 
+                            id="searchField" 
+                            name="q" 
+                            placeholder="Поиск"/>
+                     <input id="searchButton" 
+                            type="submit" 
+                            value="&nbsp;&nbsp;">
+                    </form>
+                     <span id="extendedSearch" 
+                           class="right">
+                         <a href="#">Расширенный поиск</a>
+                     </span>
+        </nav>
+        
+         <div id="main">
+             <section id="content">
+                   
+        
+              </section>
+             <div class="carusel">
+                <span id="previous"></span>		
+			<ul>		
+                            <li><img id="img1" src="" width="88" height="126" ></li>
+                            <li><img id="img2" src="" width="88" height="126" ></li>
+                            <li><img id="img3" src="" width="88" height="126" ></li>
+                            <li><img id="img4" src="" width="88" height="126" ></li>
+                            <li><img id="img5" src="" width="88" height="126" ></li>
+			</ul>			
+		<span id="next"></span>
+             </div>
+        </div>
+        
+        <script>
+            slideBook();
+        </script>
+        <script>
+            createContent(); 
+        </script>
+    </body>
+</html>

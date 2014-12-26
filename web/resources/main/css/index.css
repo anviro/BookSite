@@ -1,0 +1,403 @@
+article, aside, details, figcaption, figure, footer,header,
+hgroup, menu, nav, section, #authorization { display: block; } 
+
+/*Margin************************************************/
+.right, #authorization, .registration{
+    float: right;
+}
+
+.left, logo, .logoName, .logoSlogan, header img, .login{
+    float: left;
+}
+/*****Margin*******************************************/
+
+/*****Позиция*******************************************/
+.relative{
+    position:relative;
+}
+
+.absolute{
+    position: absolute;
+}
+/*****Позиция*******************************************/
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #E8F5FF;
+    font-family: arial, sans-serif;
+}
+
+
+/* Шапка сайта*/
+header{
+    margin: 0 auto;
+    width: 65%;
+    height: 104px;
+    background: url('../images/header_bg.jpg')no-repeat 50% 0;
+}
+
+/*****Логотип**************/
+logo{
+    width:42%;
+    min-width:320px;
+}
+
+ .logoName{   
+    font-size:218%; 
+    font-weight:bold;
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+ }
+
+
+.logoSlogan{
+    font-size:100%; 
+    font-style:italic;
+}
+header img{
+    margin:5px 10px 0 0; 
+}
+
+logo p{
+    margin: 0;
+    padding: 0;
+}
+/*****Логотип*******************************************/
+
+/*****блок Авторизации*******************************************/
+#authorization{     
+    width:250px;
+    box-shadow:1px 1px 2px #282B2F;
+    height:33px;
+    margin-top:7px;
+    background:rgba(88,107,128,0.7);
+    border-radius:180px 5px 180px 5px;
+    overflow:hidden;
+}
+
+.registration, .login{
+    color:#fff;
+    font-size: 90%;
+    line-height:33px;
+    cursor:pointer;
+    padding: 0 12.3%;
+    outline: 1px dotted #586B80;
+}
+.login:hover, .registration:hover{
+    background:rgba(88,107,128,0.8);
+}
+/*****блок Авторизации******/
+
+/***** Шапка сайта(конец)*************************************/
+
+/*Главное меню*/
+/* mark with differing style */
+.mark {
+    font-weight: 400;
+}
+/* nav */
+.nav {
+    list-style: none;
+    margin-top: -16px;
+    margin-left: -40px;
+}
+.nav li {
+    float: left;
+    position: relative;
+}
+
+/* блоки ссылок */
+.nav li a {
+    display: block;
+    padding:0 15px;
+    text-decoration: none;
+    font-size: 90%;
+    color: #F9FCFE;
+    height: 58px;
+}
+
+/* выпадающее меню */
+.sub-nav {
+    position: absolute;
+    border-top: 1px solid transparent;
+    left: -9999px;
+    list-style:none;
+    padding:0;
+    background: #586B80;
+   
+}
+
+.nav li ul li a {
+    height:37px;
+    line-height: 37px;
+    border-bottom: 1px dotted #4B5C6E;
+}
+
+/* make submenu reappear */
+.nav li:hover .sub-nav {
+    left: 0;
+}
+
+/* верхний уровень при наведении */
+.nav > li:hover > a {
+    background: #3f4d5d; /* Old browsers */
+    background: -moz-linear-gradient(top,  #3f4d5d 0%, #647991 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f4d5d), color-stop(100%,#647991)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #3f4d5d 0%,#647991 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #3f4d5d 0%,#647991 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #3f4d5d 0%,#647991 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #3f4d5d 0%,#647991 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4d5d', endColorstr='#647991',GradientType=0 ); /* IE6-9 */
+
+    box-shadow: inset 1px 1px 3px #3A4756;
+    transition: background ease .5s;
+}
+
+/***Выпадающий список на передн. план**/
+.nav li ul li{
+    background: #586B80;
+    z-index: 999;
+    position: relative;
+    margin-top: -5px;
+    
+}
+
+/* ссылки подменю */
+.sub-nav li a {
+    font-size: 90%; 
+    
+    transition: background ease .3s;
+     padding: 0px 40px;
+}
+.sub-nav a:hover {
+    background: #5D7188;
+}
+
+
+nav{
+        background: #586B80;
+        min-height: 58px;
+        margin: 0 auto;
+        max-width:1400px;
+        width:65%;
+        line-height: 58px;
+}
+
+
+
+/*****блок Поиск*/
+#searchField,#searchButton{
+        height: 27px;
+        border: none;  
+        outline: none;
+}
+
+#searchButton {
+        background:#8FABCC url(../images/searchIcon.jpg)no-repeat 6px 2px;
+        width: 33px;
+        cursor: pointer;
+}
+
+form {
+        margin-right:0.5%;
+        height: 45.4px;     
+}
+
+#extendedSearch{
+        margin-top: 19px;
+        width:200px;
+        margin-right: -196px;
+        display: block;
+}
+
+#extendedSearch a{
+        font-size:9px; 
+        font-style:italic;
+        height:10px;
+        border:none;
+        text-decoration: none;
+        color:white;
+}
+/*****блок Поиск**********/
+/*****Главное меню (конец)*****************************/
+
+
+/*Page*/
+#main{
+        width: 100%;
+        min-height: 400px;
+        margin: 0 auto;
+        padding: 0;
+        
+}
+
+/***Content***/
+section{
+        width: 65%;
+        max-width: 1400px;
+        margin: 25px auto;
+        padding: 0;
+    
+}
+
+section ul {
+        font: 14px Verdana, Geneva, sans-serif;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+}
+
+    section    ul li {
+        display: inline-block;
+        width: 130px;
+        height: 45px;
+        margin: 20px;
+        background: #E4F1FB url(../images/book.png) 48% 80px no-repeat;
+        border-bottom: 7px solid #D8E7F1;
+        vertical-align: middle;
+        text-align: center;
+        line-height: inherit;
+        padding-top: 160px;
+        font-size: 12px;
+        box-shadow: 1px 1px 3px #9AA2A9;
+
+        /* эмуляция inline-block для IE6-7*/
+        //display : inline;
+        //zoom : 1;
+        }
+
+section    ul li:hover {
+        background-color: #D8E7F1; 
+        cursor: pointer;
+}
+
+/***Content***/
+
+/*****Slider-Carusel***/
+
+
+/*****Slider-Carusel***/
+
+
+.cub{width: 30px;height: 30px; background: #000;margin-left: 20px;
+     -moz-transform: rotate(45deg);  /* Firefox */
+  -o-transform: rotate(45deg);  /* Opera */
+  -webkit-transform: rotate(45deg);  /* Safari y Chrome */
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476); /* IE */
+}
+
+.cub1{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    float: left;
+    
+}
+
+/*************Page*************/
+
+/*Адаптивный сайт*/
+
+@media screen and (max-width: 1085px) {
+    
+    header, section{
+    width: 90%;
+    }
+    .logoName{   
+    font-size:206%; 
+    font-weight:bold;
+ }
+     nav{
+    width:90%;
+    }
+    
+    .nav li a{
+    font-size: 90%;
+    padding: 0px 14px;
+    }
+    
+    .nav li ul li a{
+    padding: 0px 35px;
+    }
+    
+    #searchField{
+    width:70%;
+    }
+}
+
+
+@media screen and (max-width: 683px) {
+    header,nav, section{
+    width: 100%;
+    }
+    
+    .nav li a{
+    font-size: 90%;
+    padding: 0px 6px;
+    }
+    
+    #searchField{
+    width:80%;
+    }
+}
+
+
+@media screen and (max-width: 566px) {
+    
+     form, #searchField {
+        width:80%;margin-top: -20px;
+    }
+    nav{height:130px;}
+    
+    .nav li a{
+    font-size: 100%;
+    padding: 0px 17px;
+    margin-bottom: 5px;
+    }
+       
+}
+
+
+@media screen and (max-width: 479px) {
+    header, .nav li, form, #extendedSearch, section{
+    width: 100%;
+    }   
+    form{
+    margin: 3px 0 0 0;
+    }
+        
+    nav {
+       text-align: center;
+       height:420px;
+    }
+     
+    .nav li a{
+    width:100%;
+    display: block;
+    font-size: 170%;
+    padding: 0px;
+    border-bottom: 1px solid #667B94;
+    border-top: 1px solid #506174;
+    }
+    
+    #searchField{
+    width:78%;
+    }
+    
+    #extendedSearch{
+    margin-top: -7px;
+    float: left;
+   }
+}
+
+/*****Адаптивный сайт*/

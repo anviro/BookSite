@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Facelet Title</title>
+        <h:outputStylesheet name="admin/css/navigation.css"/>
+    </h:head>
+    <h:body>
+        <ui:composition>
+            <div id="navigation">
+                <h:outputLink id="firstElement" class="menu" 
+                              value="categories.xhtml">Категории</h:outputLink>
+                <h:outputLink class="menu" value="books.xhtml">Книги</h:outputLink>
+                <h:outputLink class="menu" value="news.xhtml">Новости</h:outputLink>
+                <h:outputLink class="menu" value="top.xhtml">Топ</h:outputLink>
+                <h:outputLink id="lastElement" class="menu" value="users.xhtml">Пользователи</h:outputLink>
+            </div>
+        </ui:composition>
+    </h:body>
+</html>
+
